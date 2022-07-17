@@ -2,7 +2,7 @@ package chapter17.src.com.wgy.syn;
 
 /**
  * @author: wuguangyuan
- * @create-date: 2022/7/6 21:39
+ * @create-date: 2022/7/6 21:54
  */
 public class DeadLock_ {
     public static void main(String[] args) {
