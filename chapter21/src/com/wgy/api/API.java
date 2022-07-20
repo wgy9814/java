@@ -8,7 +8,13 @@ package chapter21.src.com.wgy.api;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-
+/**
+ * @ClassName API
+ * @Author ：BLWY-1124
+ * @Date ：2022/4/25 7:51
+ * @Description： 编写代码，获取计算机的主机名和 IP 地址相关 API
+ * @Version: 1.0
+ */
 public class API {
     public static void main(String[] args) throws UnknownHostException {
         //1.获取本机 InetAddress 对象 getLocalHost

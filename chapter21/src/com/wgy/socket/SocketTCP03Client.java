@@ -8,6 +8,14 @@ package chapter21.src.com.wgy.socket;
 import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
+/**
+ * @ClassName SocketTCP01Client
+ * @Author ：BLWY-1124
+ * @Date ：2022/4/25 9:51
+ * @Description： 客户端
+ * 发送"hello,server" 给服务器
+ * @Version: 1.0
+ */
 
 
 public class SocketTCP03Client {

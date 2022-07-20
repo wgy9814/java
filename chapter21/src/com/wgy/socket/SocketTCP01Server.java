@@ -10,7 +10,13 @@ import java.io.InputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-
+/**
+ * @ClassName SocketTCP01Server
+ * @Author ：BLWY-1124
+ * @Date ：2022/4/25 9:50
+ * @Description： 服务端
+ * @Version: 1.0
+ */
 public class SocketTCP01Server {
     public static void main(String[] args) throws IOException {
 //1. 在本机 的 9999 端口监听, 等待连接
