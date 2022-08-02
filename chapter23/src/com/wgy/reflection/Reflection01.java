@@ -1,26 +1,25 @@
-package chapter23.src.com.wgy.reflection.question;
+package chapter23.src.com.wgy.reflection;
+
+/**
+ * @author: wuguangyuan
+ * @create-date: 2022/8/2 22:05
+ */
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
 /**
- * @author: wuguangyuan
- * @create-date: 2022/8/1 22:05
- * 反射问题的引入*/
-public class ReflectionQuestion {
-    public static void main(String[] args) throws IOException, ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
-        //根据配置文件 re.properties指定信息，创建Cat对象并调用方法hi
-        //老韩回忆
-
-        //传统的方式new对象-》调用方法
-        // Cat cat = new Cat();
-        //cat.hi();===> cat.cry()修改源码。
-        //我们尝试做一做->明自反射
-
-
+ * @author 紫英
+ * @version 1.0
+ * @discription 反射入门案例
+ */
+public class Reflection01 {
+    public static void main(String[] args) throws IOException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException, NoSuchFieldException {
 
         //1。使用Properties 类，可以读写配置文件
         Properties properties = new Properties();
@@ -47,6 +46,21 @@ public class ReflectionQuestion {
         method1.invoke(o);//传统方法对象.方法()〕，反射机制方法.invoke(对象(
 
 
+
+        //java.lang.reflect.Field:代表类的成员变量，Field对象表示某个类的成员变量
+        // 得到name字段
+        //getField不能得到私有的属性
+        Field nameField = cls.getField( "age");//
+        System.out.println(nameField.get(o));//传统写法对象.成员变量，反射︰成员变量对象. get(对象)
+
+        //ljava. lang.reflect.Constructor:代表类的构造方法，Constructor对象表示构造器
+        Constructor constructor = cls.getConstructor();//()中可以指定构造器参数类型，返回无参构造器
+        System.out.println(constructor);//cat()
+
+        Constructor constructor2 = cls.getConstructor(String.class);//这里老师传入的 String.class 就是
+        System.out.println(constructor2);//Cat(String name)
+
+
+
     }
 }
-
