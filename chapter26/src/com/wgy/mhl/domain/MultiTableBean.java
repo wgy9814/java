@@ -31,6 +31,7 @@ public class MultiTableBean {
     private Double price;
 
     public MultiTableBean() {
+        System.out.println("反射调用....");
     }
 
     /*public MultiTableBean(Integer id, String billId, Integer menuId, Integer nums, Double money, Integer diningTableId, Date billDate, String state, String name, Double price) {
