@@ -8,7 +8,7 @@ import java.util.Comparator;
  * @author 某某某
  * @date 2022/8/23 17:18
  */
-public class HorseChessboard {
+public class HorseChessBoard {
     private static int X;//棋盘的列数
     private static int Y;//棋盘的行数
     //标记棋盘的各个位置是否被访问过
