@@ -6,6 +6,8 @@ package chapter17.src.com.wgy.Thread;
  */
 public class Thread03 {
     public static void main(String[] args) {
+        //请编写一个程序,创建两个线程,一个线程每隔1秒输出“hello,world”，输出10次，退出，
+        // 一个线程每隔1秒输出hi ”，输出5次退出. Thread03.java
 
         T1 t1 = new T1();
         T2 t2 = new T2();

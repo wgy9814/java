@@ -3,6 +3,7 @@ package chapter17.src.com.wgy.Thread;
 /**
  * @author: wuguangyuan
  * @create-date: 2022/7/3 12:50
+ * 使用多线程，模拟三个窗口同时售票100张
  */
 public class SellTicket {
     public static void main(String[] args) {

@@ -3,6 +3,7 @@ package chapter17.src.com.wgy.exit_;
 /**
  * @author: wuguangyuan
  * @create-date: 2022/7/3 13:00
+ * 启动一个线程t，要求在main线程中去停止线程t
  */
 public class ThreadExit_ {
     public static void main(String[] args) throws InterruptedException {
