@@ -3,6 +3,8 @@ package chapter17.src.com.wgy.state_;
 /**
  * @author: wuguangyuan
  * @create-date: 2022/7/3 22:47
+ * 写程序查看线程状态
+ * 生命周期
  */
 public class ThreadState_ {
     public static void main(String[] args) throws InterruptedException {

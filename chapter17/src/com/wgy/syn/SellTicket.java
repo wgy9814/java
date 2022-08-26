@@ -3,6 +3,7 @@ package chapter17.src.com.wgy.syn;
 /**
  * @author: wuguangyuan
  * @create-date: 2022/7/3 12:50
+ * 同步方法解决超卖
  */
 public class SellTicket{
     public static void main(String[] args) {
@@ -31,7 +32,7 @@ public class SellTicket{
 
 
 //使用Thread方式
-
+//实现接口方式，使用synchronized实现线程同步
 class SellTicket03 extends Thread {
 
     private static int ticketNum = 100;//让多个线程共享 ticketNum

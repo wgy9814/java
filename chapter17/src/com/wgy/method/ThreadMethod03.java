@@ -3,6 +3,8 @@ package chapter17.src.com.wgy.method;
 /**
  * @author: wuguangyuan
  * @create-date: 2022/7/3 22:16
+ * /将dt设置为守护线程，当所有线程结束后，dt也就自动结束
+ * ”如果没有设置，那么即使main线程执行完毕, dt也不退出，可以体验一下
  */
 public class ThreadMethod03 {
     public static void main(String[] args) throws InterruptedException {
