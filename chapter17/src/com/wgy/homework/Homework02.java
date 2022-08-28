@@ -6,6 +6,9 @@ package chapter17.src.com.wgy.homework;
  */
 public class Homework02 {
     public static void main(String[] args) {
+        //(1)有2个用户分别从同一个卡上取钱（总额:10000)
+        // (2)每次都取1000,当余额不足时，就不能取款了
+        // (3)不能出现超取现象=》线程同步问题.
         T t = new T();
         Thread thread1 = new Thread(t);
         thread1.setName("t1");
